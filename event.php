@@ -2,7 +2,7 @@
 session_start();
 ob_start();
 include_once('DBCon.php');
-
+//database connection
 $userIDSession = $_SESSION["user_id"];
 
 $query = "SELECT * FROM event order BY eventDate";
